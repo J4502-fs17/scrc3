@@ -39,6 +39,11 @@ nav ul {
   display: flex;
   flex-flow: column;
 	list-style: none;
+  background-color: yellow;
+}
+
+#nav {
+  padding: 0;
 }
 
 .authorbox img {
@@ -165,4 +170,63 @@ article:last-of-type {
 		flex-direction: row;
 		justify-content: center;
 	}
+}
+
+body {
+  background-color: #F8ECC2;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+nav ul li {
+  display: black;
+  border-top: 1px #79896d solid;
+}
+
+nav a {
+  color: #f8ecc2;
+  display: block;
+  text-decoration: none;
+  padding: 20px 30px;
+}
+
+header {
+  display: flex;
+  flex-flow: row;
+  background-color: #65a8a6;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.menu-trigger {
+  order: 1;
+}
+
+header h1 {
+  order: 2;
+
+}
+
+nav ul {
+  display: none;
+}
+
+@media screen and (min-width:700px) {
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {border-top:none;}
+
+  .menu-trigger {
+    display: none;
+  }
+
+  header h1 {
+    order: 1;
+  }
+  
+  nav {
+    order: 2;
+  }
 }
