@@ -12,6 +12,22 @@
   justify-content: space-between;
 }
 
+
+.map-wrapper {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-wrapper iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 .container {
  padding: 10px;
  background: #DCDCDC;
@@ -165,6 +181,9 @@ article:last-of-type {
 	flex-direction: column;
 }
 
+
+
+
 @media (min-width: 600px) {
 	.container1 {
 		flex-direction: row;
@@ -225,7 +244,7 @@ nav ul {
   header h1 {
     order: 1;
   }
-  
+
   nav {
     order: 2;
   }
